@@ -32,13 +32,18 @@
 
   display: block;
 }
-.textAreaBox {
+.textAreaEmpty {
   width: 240px;
   height: 170px;
   resize: none;
   margin-top: 8px;
   padding: 8px;
   outline: none;
+  border: 1px solid var(--icon-color);
+}
+.textAreaFilled {
+  composes: textAreaEmpty;
+  border: 1px solid var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
